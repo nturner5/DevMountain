@@ -1,0 +1,64 @@
+/* playfair */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Playfair Display', serif;
+    font-weight: 700;
+    z-index: 2;
+}
+
+p,a,button,li {
+    font-family: 'Raleway', sans-serif;
+    z-index: 2;
+}
+
+.main-app-header {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 16px;
+
+}
+
+.menu img {
+    box-shadow: 0 4px 8px 0 #000;
+
+   
+}
+
+.mid-section {
+    display: flex;
+    background:lightgray;
+    width: 85%;
+    height: 70vh;
+    margin: auto;  
+    position: relative; 
+    justify-content: center;
+}
+
+.intro-text {
+    font-size: 3.9rem;
+    letter-spacing: 6px;
+    line-height: 75px;
+    align-self: center;
+    padding-left: 20px;
+    
+
+}
+
+.view-portfolio {
+    box-shadow: 0 4px 8px 0 #000;
+    width: 250px;
+    height: 45px;
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: -18px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 16px;
+}
+
+
+
+}
+
