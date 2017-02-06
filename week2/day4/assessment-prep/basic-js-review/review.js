@@ -18,7 +18,7 @@ aThroughD.unshift('apple');
 //8. Remove 'c' from the array and put 'cat' in its place
 aThroughD.splice(2, 1, 'cat');
 //9. Leave 'apple' in the array but put a copy of it on a var called bestFruit
-var bestFruit = aThroughD[0].slice();
+var bestFruit = aThroughD.slice(0, 1)[0];
 //10. Create an object called spaceJam
 //    spaceJam has: a title of 'Space Jam' (String)
 //                  a release_year of 1996 (Number)
