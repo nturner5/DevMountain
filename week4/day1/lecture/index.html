@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <title>Title</title>
+</head>
+<body ng-controller="mainCtrl">
+
+    <h1>Welcome to Home of the Clippers on the internet!</h1>
+    <nav>
+        <a ui-sref='home'>Home</a>
+        <a ui-sref='roster'>Roster</a>
+    </nav>
+    <ui-view></ui-view>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js" charset="utf-8"></script>
+  <script src="./js/app.js" charset="utf-8"></script>
+  <script src="./js/controller.js" charset="utf-8"></script>
+  <script src="./js/playerService.js" charset="utf-8"></script>
+  <script src="./home/homeCtrl.js"></script>
+  <script src="./roster/rosterCtrl.js"></script>
+  <script src="./player/playerCtrl.js"></script>
+</body>
+</html>
