@@ -1,0 +1,123 @@
+* {
+  font-family: Helvetica, sans-serif; }
+
+
+
+h1 {
+  color: red; }
+
+.header {
+  width: 100%;
+  height: 187px; }
+  .header .top-header {
+    width: 100%;
+    height: 72px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+    background: white; }
+    .header .top-header .top-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 42px;
+      background: #E60012; }
+      .header .top-header .top-nav .red-bar {
+        width: 100%;
+        height: 42px;
+        display: none;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        background: #E60012; }
+        .header .top-header .top-nav .red-bar img {
+          margin-left: 20px; }
+        .header .top-header .top-nav .red-bar i {
+          margin-top: 10px;
+          margin-right: 75px;
+          color: white; }
+      .header .top-header .top-nav .empty-search {
+        display: none;
+        width: 362px;
+        height: 36px;
+        color: #888;
+        margin-top: 12px;
+        justify-content: center;
+        word-spacing: 10px; }
+        .header .top-header .top-nav .empty-search p {
+          margin-top: 5px;
+          margin-left: 100px;
+          font-size: 14px; }
+        .header .top-header .top-nav .empty-search i {
+          margin-bottom: 20px; }
+      .header .top-header .top-nav .oval {
+        display: flex;
+        margin-right: 160px;
+        justify-content: space-between;
+        align-items: center;
+        width: 362px;
+        height: 36px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: lightgray;
+        border-radius: 25px;
+        margin-top: 4px;
+        padding-right: 18px; }
+        .header .top-header .top-nav .oval i {
+          color: #888; }
+        .header .top-header .top-nav .oval p {
+          margin-left: 14px;
+          font-size: 14px;
+          color: #888; }
+      .header .top-header .top-nav .logo-container {
+        display: flex;
+        background: #E60012;
+        width: 165px;
+        height: 90px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin-left: 15px;
+        justify-content: center;
+        will-change: transform; }
+        .header .top-header .top-nav .logo-container .logo-nintendo {
+          align-self: center; }
+      @media (max-width: 895px) {
+        .header .top-header .top-nav .oval {
+          display: none; }
+        .header .top-header .top-nav .empty-search {
+          display: block; } }
+      @media (max-width: 770px) {
+        .header .top-header .top-nav .logo-container {
+          display: none; }
+        .header .top-header .top-nav .empty-search {
+          display: none; } }
+      @media (min-width: 770px) {
+        .header .top-header .top-nav .red-bar {
+          display: none; } }
+    @media (min-width: 770px) {
+      .header .top-header .top-nav {
+        background: white; } }
+    .header .top-header .wrapper {
+      display: flex;
+      width: 100%;
+      height: 30px;
+      background: #F1F1F1;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto; }
+      .header .top-header .wrapper .space {
+        width: 78%;
+        height: 30px;
+        padding-top: 7.5px;
+        justify-content: flex-end; }
+        .header .top-header .wrapper .space a {
+          height: 30px;
+          text-decoration: none;
+          padding-top: 5px;
+          padding-left: 15px;
+          padding-right: 15px;
+          font-size: 14px;
+          color: gray; }
+    @media (max-width: 770px) {
+      .header .top-header .space {
+        display: none; } }
+
