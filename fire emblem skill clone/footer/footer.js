@@ -5,6 +5,7 @@ angular.module("fireApp").directive('footer', function() {
         controller: function($scope) {
             $scope.reloadPage = function() {
                 location.reload();
+
         }
     }
     }
