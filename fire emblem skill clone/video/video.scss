@@ -1,0 +1,40 @@
+ .video-main {
+     width: 100%;
+     height: auto;
+     margin-bottom: 20px;   
+    .trailer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        .trailer-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 85%;
+            height: 50px;
+            background-color: #E7E7E7;
+            border-radius: 10px;
+            .left-box {
+                display: flex;
+                img {
+                    width: 75px;
+                    height: 40px;
+                    margin-left: 5px;
+                }
+                p {
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    font-style: italic;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+            }
+            i {
+                margin-right: 20px;
+                color: #3A569D;
+            }
+        }
+    }
+ }
