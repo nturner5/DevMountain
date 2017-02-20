@@ -100,10 +100,20 @@ h1 {
       width: 100%;
       height: 30px;
       background: #F1F1F1;
-      justify-content: flex-end;
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto; }
+      justify-content: flex-end; }
+      .header .top-header .wrapper .lower-space {
+        width: 100%;
+        height: 30px;
+        padding-top: 7.5px;
+        text-align: center; }
+        .header .top-header .wrapper .lower-space a {
+          height: 30px;
+          text-decoration: none;
+          padding-top: 5px;
+          padding-left: 50px;
+          padding-right: 50px;
+          font-size: 12px;
+          color: gray; }
       .header .top-header .wrapper .space {
         width: 78%;
         height: 30px;
@@ -117,7 +127,60 @@ h1 {
           padding-right: 15px;
           font-size: 14px;
           color: gray; }
-    @media (max-width: 770px) {
-      .header .top-header .space {
-        display: none; } }
+      @media (max-width: 680px) {
+        .header .top-header .wrapper .lower-space a {
+          padding-top: 5px;
+          padding-left: 25px;
+          padding-right: 25px;
+          font-size: 10px; } }
+      @media (max-width: 415px) {
+        .header .top-header .wrapper .lower-space a {
+          padding-top: 5px;
+          padding-left: 15px;
+          padding-right: 15px;
+          font-size: 9px; } }
+      @media (max-width: 1065px) {
+        .header .top-header .wrapper .space a {
+          padding-top: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 12px; } }
+      @media (max-width: 840px) {
+        .header .top-header .wrapper .space a {
+          padding-top: 5px;
+          padding-left: 7px;
+          padding-right: 7px;
+          font-size: 10px; } }
+      @media (max-width: 770px) {
+        .header .top-header .wrapper .space {
+          display: none; } }
+      @media (min-width: 770px) {
+        .header .top-header .wrapper .lower-space {
+          display: none; } }
+  .header .explore-bar {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    background-color: black; }
+    .header .explore-bar .explored {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end; }
+      .header .explore-bar .explored h1 {
+        font-style: italic;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 14px; }
+        .header .explore-bar .explored h1 a {
+          text-decoration: none;
+          color: white; }
+      .header .explore-bar .explored i {
+        margin-top: 10px;
+        margin-right: 50px;
+        color: white; }
+  .header .main-img {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center; }
 
