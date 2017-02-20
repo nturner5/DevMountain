@@ -1,0 +1,153 @@
+    .second-nav {
+        width: 100%;
+        height: 949px;
+        .footer-title {
+            display: flex;
+            width: 100%;
+            height: 21px;
+            justify-content: center;
+            .footer-text {
+                width: 90%;
+                height: 20px;
+                border-bottom-width: 3px;
+                border-style: solid;
+                border-color: black;
+                font-style: italic;
+                font-weight: bold;
+                p {
+                    font-style: italic;
+                }
+            } // end of footer-text
+        } // end of footer title
+        ul {
+            margin-top: 15px;
+            width: 100%;
+            height: 315px;
+            border-top-width: 1px;
+            border-style: solid;
+            border-color: lightgray;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 41px;
+                border-bottom-width: 1px;
+                border-style: solid;
+                border-color: lightgray;
+                a {
+                    margin-left: 15px;
+                    font-style: italic;
+                    text-decoration: none;
+                    color: black;
+                }
+                i {
+                    margin-right: 15px;
+                    color: #095589;
+                }
+            }
+        }
+        .buy-container {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            .buy-now {
+                width: 90%;
+                height: 50px;
+                background-color: #095589;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+            }
+        }
+        .share-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 48px;
+            margin-top: 10px;
+            .share {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                height: 45px;
+                border-top-width: 1px;
+                border-bottom-width: 1px;
+                border-style: solid;
+                h3 {
+                    font-style: italic;
+                }
+                i {
+                    padding-left: 10px;
+                    color: #3A569D;
+                }
+                div {
+                    padding-left: 10px;
+                    color: #3A569D;
+                }
+            }
+        }
+        .parental-container {
+            width: 100%;
+            height: 150px;
+            .parental-text {
+                text-align: center;
+                padding-top: 30px;
+                p {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+            }
+        }
+        .follow-container {
+            display: flex;
+            width: 100%;
+            height: 150px;
+            justify-content: center;
+            align-items: center;
+            .follow {
+                width: 100%;
+                height: 75px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .social-icon {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    text-decoration: none;
+                    justify-content: center;
+                    color: #3A569D;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        .rating-img {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                padding-left: 10px;
+            }
+        }
+        .copyright {
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            p {
+                margin-left: 15px;
+                margin-right: 15px;
+                font-size: 11px;
+                line-height: 15px;
+            }
+        }
+    } // end of second nav

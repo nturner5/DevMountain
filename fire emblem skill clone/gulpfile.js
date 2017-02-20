@@ -28,6 +28,7 @@ gulp.task('css', function() {
     './characters/characters.scss',
     './home/home.scss',
     './navbar/navbar.scss',
+    './footer/footer.scss',
     './video/video.scss'
 
     ])
