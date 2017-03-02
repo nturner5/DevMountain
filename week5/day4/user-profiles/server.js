@@ -14,8 +14,14 @@ var port = 9092;
 var app = express();
 
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true }))
 app.use(cors(corsOptions));
-app.use(session({ secret: config.sessionSecret }))
+app.use(session({ 
+    secret: config.sessionSecret,
+    resave: false,
+    saveUninitialized: true
+
+ }))
 app.use(express.static(__dirname + '/public'));
 
 app.post('/api/login', userCtrl.login)

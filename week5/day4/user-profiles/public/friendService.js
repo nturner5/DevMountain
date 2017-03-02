@@ -5,16 +5,20 @@ angular.module('userProfiles')
     this.login = function (user) {
       return $http({
         method: 'POST',
-        url: 'http://localhost:9092/api/login',
+        url: '/api/login',
         data: user
-      });
+      }).then(function(response){
+        return response;
+      } )
     };
 
     this.getFriends = function () {
       return $http({
         method: 'POST',
-        url: 'http://localhost:9092/api/profiles'
-      })
+        url: '/api/profiles'
+      }).then(function(response){
+        return response;
+      } )
     };
 
   });
