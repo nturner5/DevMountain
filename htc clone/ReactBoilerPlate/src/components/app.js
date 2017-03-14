@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import Navbar from './navbar/navbar'
 import Home from './home/home';
-import Products from './products/products'
+
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        React simple starter
-        <Home />
+        <Navbar />
+        {this.props.children}
       </div>
     );
   }
