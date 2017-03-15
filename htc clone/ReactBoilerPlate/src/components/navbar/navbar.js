@@ -30,23 +30,23 @@ export default class Navbar extends Component {
     render() {
         return (
             <header>
-                <nav className='navbar'>
+                <nav className='nav-bar'>
                     <ul className='navbar-list'>
                         <div className='logo-box'>
                             <Link to="home">
                                 <img src="../../../assets/images/htc-logo.png" alt=""/>
                             </Link>
                         </div>
-                        <li className="dropdown" onMouseOver={this.onHover} onMouseOut={this.onExit}>
+                        <li className="dropdown-p" onMouseOver={this.onHover} onMouseOut={this.onExit}>
                             <a href="#" className="dropbtn">Products<i className="fa fa-caret-down fa-fw" aria-hidden="true"></i></a>
 
                         </li>
-                        <li className="dropdown" onMouseOver={this.onHover} onMouseOut={this.onExit}>
+                        <li className="dropdown-s" onMouseOver={this.onHover} onMouseOut={this.onExit}>
                             <a href="#" className="dropbtn">Shop<i className="fa fa-caret-down fa-fw" aria-hidden="true"></i></a>
 
                         </li>
-                        <li><a href="#news">Vive</a></li>
-                        <li className="dropdown"  onMouseOver={this.onHover} onMouseOut={this.onExit}>
+                        <li className='dropdown-v'><a href="#news">Vive</a></li>
+                        <li className="dropdown-sup"  onMouseOver={this.onHover} onMouseOut={this.onExit}>
                             <a href="#" className="dropbtn">Support<i className="fa fa-caret-down fa-fw" aria-hidden="true"></i></a>
                         </li>
                     </ul>

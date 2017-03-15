@@ -5,8 +5,8 @@ const Home = () => {
         <main role='main'>
             <section>
                 <div className='main-img-container'>
-                    <div className='main-img' width='1180px' height='472px'>
-                    </div>
+                    <img src='/../.../../assets/images/20170309-hp-htc-u-ultra.jpg' className='main-img' width='1180px' height='472px' />
+
                 </div>
             </section>
         </main>

@@ -2,15 +2,18 @@ section {
     width: 100%;
 }
 
-.main-img-container{
-  width: 100%;
+.main-img-container {
+    width: 100%;
 }
 
 .main-img {
-    width: 100%;
+    width: 98%;
     min-width: 988px;
     height: auto;
+    display: block;
+    margin: 0 auto;
     color: black;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
