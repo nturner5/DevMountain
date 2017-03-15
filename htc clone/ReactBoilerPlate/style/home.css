@@ -7,7 +7,7 @@ section {
 }
 
 .main-img {
-    width: 98%;
+    width: 98.2%;
     min-width: 988px;
     height: auto;
     display: block;
@@ -15,5 +15,38 @@ section {
     color: black;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.u-container {
+    width: 100%;
+    min-width: 988px;
+    height: auto;
+    text-align: center;
+}
+
+.u-container img {
+    width: 32.9%;
+    min-width: 316px;
+    height: auto;
+    display: inline-block;
+    margin: 4px 1px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.u-container img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.carousel-home {
+    width: 98.2%;
+    min-width: 904px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px;
+    color: #333;
+    background: lightgray;
+    margin-bottom: 10px;
 }
 
