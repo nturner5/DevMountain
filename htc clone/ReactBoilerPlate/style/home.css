@@ -1,0 +1,16 @@
+section {
+    width: 100%;
+}
+
+.main-img-container{
+  width: 100%;
+}
+
+.main-img {
+    width: 100%;
+    min-width: 988px;
+    height: auto;
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

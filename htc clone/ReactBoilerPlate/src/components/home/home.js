@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-var styles = {
-    h1: {
-        fontSize: '75px'
-    }
-}
 
 const Home = () => {
     return(
-        <div>
-            <h1 className={styles.h1}> hello im main home</h1>
-        </div>
+        <main role='main'>
+            <section>
+                <div className='main-img-container'>
+                    <div className='main-img' width='1180px' height='472px'>
+                    </div>
+                </div>
+            </section>
+        </main>
     )
 }
 
