@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './navbar/navbar'
-import Home from './home/home';ff
-import
+import Home from './home/home';
+import Footer from './footer/footer'
 
 export default class App extends Component {
   render() {
