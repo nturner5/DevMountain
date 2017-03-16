@@ -18,20 +18,35 @@ class LeftNavArrow extends Component{
 export default class HomeCarousel extends Component {
   render() {
   	var settings = {
-    	dots: true,
-        infinite: true,
-        slidesToScroll: 1,
-        nextArrow: <RightNavArrow />,
-        prevArrow: <LeftNavArrow />
+    	dots: false,
+      arrows: false,
+      infinite: true,
+      slidesToScroll: 1,
+      nextArrow: <RightNavArrow />,
+      prevArrow: <LeftNavArrow />,
+      autoplay: true,
+      autoplaySpeed: 5000
 
     }
     return (
     	<div className='carousel-home'>
       	<Slider {...settings}>
-        	<div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
-          <div><img src='http://placekitten.com/g/400/200' /></div>
+          <div>
+            <p className='quotes'>"Love it. Finally a device that's more of what I've been looking for."</p> <br/>
+            <p className='author'>-Josh_ElevatedMugetsu</p>
+          </div>
+          <div>
+            <p className='quotes'>"I love the device. Amazing! Another winning HTC device."</p> <br/>
+            <p className='author'>-Michael D.</p>
+          </div>
+          <div>
+            <p className='quotes'>"HTC knows how to make a good-looking phone, and the HTC U Ultra is gorgeous in glass."</p> <br/>
+            <p className='author'>-CNET 1/12/17</p>
+          </div>
+          <div>
+            <p className='quotes'>"Beautiful!! HTC nails it again with the build quality."</p> <br/>
+            <p className='author'>-JJ Samson</p>
+          </div>
         </Slider>
       </div>
     );

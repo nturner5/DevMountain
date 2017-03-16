@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HomeCarousel from './home-carousel'
+import BuyToday from './buy_today'
 
 const Home = () => {
     return(
@@ -17,9 +18,10 @@ const Home = () => {
                 </div>
             </section>
             <HomeCarousel />
-            <div className='main-img-container'>
-                    <img src='/../../../assets/images/u-whybuy-homepage.jpg' className='main-img' width='1180px' height='492px' />
-                </div>
+            <div className='onlyhtc-img-container'>
+                <img src='/../../../assets/images/u-whybuy-homepage.jpg' className='onlyhtc-img' width='1180px' height='492px' />
+            </div>
+            <BuyToday />
         </main>
     )
 }

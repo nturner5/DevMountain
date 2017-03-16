@@ -25,7 +25,7 @@ section {
 }
 
 .u-container img {
-    width: 32.9%;
+    width: 32.8%;
     min-width: 316px;
     height: auto;
     display: inline-block;
@@ -39,14 +39,171 @@ section {
     cursor: pointer;
 }
 
+.onlyhtc-img-container {
+    width: 100%;
+}
+
+.onlyhtc-img {
+    width: 98.2%;
+    min-width: 988px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 .carousel-home {
     width: 98.2%;
     min-width: 904px;
-    height: auto;
+    height: 190px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 60px 30px;
     color: #333;
-    background: lightgray;
+    background: white;
     margin-bottom: 10px;
+    text-align: center;
 }
 
+.quotes {
+    font-size: 27px;
+    color: dimgray;
+    line-height: 1.2em;
+}
+
+.author {
+    font-style: italic;
+    font-size: 20px;
+    color: gray;
+}
+
+.buy-today-container {
+    width: 98.2%;
+    min-width: 988px;
+    height: 620px;
+    display: block;
+    margin: auto;
+    padding: 40px 30px 95px;
+}
+
+.buy-today-container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    color: #474039;
+    margin-top: 20px;
+}
+
+.phone-container {
+    width: 100%;
+    height: 327px;
+    margin-top: 10px;
+}
+
+.item-container {
+    width: 20%;
+    height: 324px;
+    display: inline-block;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 18px;
+    position: relative;
+    text-align: center;
+}
+
+.image-container .front, .image-container .back {
+    width: 100px;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    bottom: 0;
+    vertical-align: middle;
+}
+
+
+.accessories {
+    width: 198px;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    bottom: 0;
+    vertical-align: middle;
+}
+
+.item-container h3 {
+    height: 35px;
+}
+
+.buy-button {
+    width: 88px;
+    height: 41px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1776BD;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-button a {
+    padding: 15px 32px;
+    text-decoration: none;
+    color:#1776BD;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.buy-button:hover, .buy-button a:hover {
+    background-color: #1776BD;
+    color: white;
+}
+
+.view-phones {
+    width: 210px;
+    height: 41px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1776BD;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-phones a {
+    padding: 15px 32px;
+    text-decoration: none;
+    color:#1776BD;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.view-phones:hover, .view-phones a:hover {
+    background-color: #1776BD;
+    color: white;
+}
+
+.item-container:hover .front {
+    display:block;
+}
+
+.item-container:hover .back {
+    display: hide;
+}
