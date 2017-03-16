@@ -4,26 +4,46 @@ import { Link } from 'react-router'
 export default class Navbar extends Component {
     constructor(props) {
         super(props);
-        this.onHover = this.onHover.bind(this)
-        this.onExit = this.onExit.bind(this)
+        this.onHoverA = this.onHoverA.bind(this)
+        this.onExitA = this.onExitA.bind(this)
+        this.onHoverB = this.onHoverB.bind(this)
+        this.onExitB = this.onExitB.bind(this)
+        this.onHoverC = this.onHoverC.bind(this)
+        this.onExitC = this.onExitC.bind(this)
         this.state = {
-            a: {display: 'none'},
-            b: {display: 'none'},
-            c: {display: 'none'}
+            a: { display: 'none' },
+            b: { display: 'none' },
+            c: { display: 'none' }
         }
     }
-    onHover (dropDown) {
+    onHoverA () {
         this.setState({
-            dropDown: {
-                display: 'block'
-            }
+            a: { display: 'block' }
         })
     }
-    onExit (dropDown) {
+    onExitA () {
         this.setState({
-            dropDown: {
-                display: 'none'
-            }
+            a: { display: 'none' }
+        })
+    }
+    onHoverB () {
+        this.setState({
+            b: { display: 'block' }
+        })
+    }
+    onExitB () {
+        this.setState({
+            b: { display: 'none' }
+        })
+    }
+    onHoverC () {
+        this.setState({
+            c: { display: 'block' }
+        })
+    }
+    onExitC () {
+        this.setState({
+            c: { display: 'none' }
         })
     }
     render() {
@@ -36,16 +56,16 @@ export default class Navbar extends Component {
                                 <img src="../../../assets/images/htc-logo.png" alt=""/>
                             </Link>
                         </div>
-                        <li className="dropdown-p" onMouseOver={this.onHover} onMouseOut={this.onExit}>
+                        <li className="dropdown-p" onMouseOver={this.onHoverA} onMouseOut={this.onExitA}>
                             <Link to='products' className="dropbtn">Products<i className="fa fa-caret-down fa-fw" aria-hidden="true"></i></Link>
 
                         </li>
-                        <li className="dropdown-s" onMouseOver={this.onHover.bind(this, 'b')} onMouseOut={this.onExit.bind(this, 'b')}>
+                        <li className="dropdown-s" onMouseOver={this.onHoverB} onMouseOut={this.onExitB}>
                             <a href="#" className="dropbtn">Shop<i className="fa fa-caret-down fa-fw" aria-hidden="true"></i></a>
 
                         </li>
                         <li className='dropdown-v'><a href="#news">Vive</a></li>
-                        <li className="dropdown-sup"  onMouseOver={this.onHover} onMouseOut={this.onExit}>
+                        <li className="dropdown-sup"  onMouseOver={this.onHoverC} onMouseOut={this.onExitC}>
                             <a href="#" className="dropbtn">Support<i className="fa fa-caret-down fa-fw" aria-hidden="true"></i></a>
                         </li>
                     </ul>
@@ -66,26 +86,26 @@ export default class Navbar extends Component {
                     </div>
                 </nav>
                 
-                <div className="dropdown-product" onMouseOver={this.onHover.bind(this, 'a')} onMouseOut={this.onExit.bind(this, 'a')} style={this.state.a}>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 3</a>
+                <div className="dropdown-product" onMouseOver={this.onHoverA} onMouseOut={this.onExitA} style={this.state.a}>
+                    <a href="#">A 1</a>
+                    <a href="#">A 2</a>
+                    <a href="#">A 3</a>
+                    <a href="#">A 3</a>
+                    <a href="#">A 3</a>
                 </div>
-                <div className="dropdown-shop" onMouseOver={this.onHover.bind(this, 'b')} onMouseOut={this.onExit.bind(this, 'b')} style={this.state.b}>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 3</a>
+                <div className="dropdown-shop" onMouseOver={this.onHoverB} onMouseOut={this.onExitB} style={this.state.b}>
+                    <a href="#">B 1</a>
+                    <a href="#">B 2</a>
+                    <a href="#">B 3</a>
+                    <a href="#">B 3</a>
                     <a href="#">ABC</a>
                     <a href="#">DEF</a>
                 </div>
-                <div className="dropdown-support" onMouseOver={this.onHover} onMouseOut={this.onExit} style={this.state.c}>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 3</a>
+                <div className="dropdown-support" onMouseOver={this.onHoverC} onMouseOut={this.onExitC} style={this.state.c}>
+                    <a href="#">C 1</a>
+                    <a href="#">C 2</a>
+                    <a href="#">C 3</a>
+                    <a href="#">C 3</a>
                     <a href="#">AAA</a>
                 </div>
             </header>

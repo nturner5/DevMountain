@@ -200,10 +200,3 @@ section {
     color: white;
 }
 
-.item-container:hover .front {
-    display:block;
-}
-
-.item-container:hover .back {
-    display: hide;
-}
