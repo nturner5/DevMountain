@@ -18,7 +18,7 @@ export default class Navbar extends Component {
     }
     onHoverA () {
         this.setState({
-            a: { display: 'block' }
+            a: { display: 'block'}
         })
     }
     onExitA () {
@@ -87,11 +87,19 @@ export default class Navbar extends Component {
                 </nav>
                 
                 <div className="dropdown-product" onMouseOver={this.onHoverA} onMouseOut={this.onExitA} style={this.state.a}>
-                    <a href="#">A 1</a>
-                    <a href="#">A 2</a>
-                    <a href="#">A 3</a>
-                    <a href="#">A 3</a>
-                    <a href="#">A 3</a>
+                    <div className='drop-menu-container'>
+                        <div className='product-phone-link'>
+                            <a href="#">_HTC U Ultra</a>
+                            <a href="#">_HTC 10</a>
+                            <a href="#">_HTC One A9</a>
+                            <a href="#">_HTC Accessories</a>
+                            <a href="#">_VIVE</a>
+                        </div>
+                        <div className='product-img-name'>
+                        
+                        </div>
+                    </div>
+                    
                 </div>
                 <div className="dropdown-shop" onMouseOver={this.onHoverB} onMouseOut={this.onExitB} style={this.state.b}>
                     <a href="#">B 1</a>
