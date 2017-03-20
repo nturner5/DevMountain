@@ -8,6 +8,7 @@ export default class App extends Component {
     return (
       <div>
         <Navbar />
+        {'empty string'}
         {this.props.children}
         <Footer />
       </div>

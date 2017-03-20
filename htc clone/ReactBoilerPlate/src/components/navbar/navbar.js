@@ -145,19 +145,52 @@ export default class Navbar extends Component {
                     
                 </div>
                 <div className="dropdown-shop" onMouseOver={this.onHoverB} onMouseOut={this.onExitB} style={this.state.b}>
-                    <a href="#">B 1</a>
-                    <a href="#">B 2</a>
-                    <a href="#">B 3</a>
-                    <a href="#">B 3</a>
-                    <a href="#">ABC</a>
-                    <a href="#">DEF</a>
+                    <div className='drop-menu-container'>
+                        <div className='shop-phone-link'>
+                            <a href="#">_HTC U Ultra</a>
+                            <a href="#">_HTC 10</a>
+                            <a href="#">_HTC One A9</a>
+                            <a href="#">_HTC Bolt</a>
+                            <a href="#">_HTC Accessories</a>
+                        </div>
+                        <div className='product-img-name'>
+                                <div className='nav-shop-box'>
+                                    <div className='nav-shop-img'>
+                                        <img src="../../../assets/images/htc-u-ultra-pdp-nav.png" width='394px' height='185px' alt=""/>
+                                        <div className='nav-prod-name'>
+                                            HTC U Ultra
+                                        </div>
+                                        <div className='nav-prod-desc'>
+                                            It's all about U
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div className="dropdown-support" onMouseOver={this.onHoverC} onMouseOut={this.onExitC} style={this.state.c}>
-                    <a href="#">C 1</a>
-                    <a href="#">C 2</a>
-                    <a href="#">C 3</a>
-                    <a href="#">C 3</a>
-                    <a href="#">AAA</a>
+                    <div className='drop-menu-container'>
+                        <div className='supp-phone-link'>
+                            <a href="#">_Devices & Accessories</a>
+                            <a href="#">_Purchase & Order Questions</a>
+                            <a href="#">_Video Tutorials</a>
+                            <a href="#">_Software+Apps</a>
+                        </div>
+                        <div className='product-img-name'>
+                                <div className='nav-supp-box'>
+                                    <div className='nav-shop-img'>
+                                        <img src="../../../assets/images/HTC-U-Ultra-unlocked-nav.png" width='394px' height='222px' alt=""/>
+                                        <div className='nav-prod-name'>
+                                            HTC U Ultra
+                                        </div>
+                                        <div className='nav-prod-desc'>
+                                            It's all about U
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
                 </div>
             </header>
         )
