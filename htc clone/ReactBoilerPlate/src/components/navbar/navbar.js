@@ -53,7 +53,7 @@ export default class Navbar extends Component {
                     <ul className='navbar-list'>
                         <div className='logo-box'>
                             <Link to="/">
-                                <img src="../../../assets/images/htc-logo.png" alt=""/>
+                                <img src="../../../assets/images/logos/htc-logo.png" alt=""/>
                             </Link>
                         </div>
                         <li className="dropdown-p" onMouseOver={this.onHoverA} onMouseOut={this.onExitA}>
@@ -80,7 +80,7 @@ export default class Navbar extends Component {
                             </div>
                         </div>
                         <form className='search'>
-                            <img src="../../../assets/images/magnify.png" alt="" type='submit' value='Submit'/>
+                            <img src="../../../assets/images/icons/magnify.png" alt="" type='submit' value='Submit'/>
                             <input type="text" placeholder='Search'/>
                         </form>
                     </div>
@@ -96,7 +96,50 @@ export default class Navbar extends Component {
                             <a href="#">_VIVE</a>
                         </div>
                         <div className='product-img-name'>
-                        
+                                <div className='nav-phone-box'>
+                                    <div className='nav-phone-img'>
+                                        <img src="../../../assets/images/nav-phones/htc-u-ultra-blue-global-2v-listing-copy.png" width='177px' height='170px' alt=""/>
+                                        <div className='nav-prod-name'>
+                                            HTC U Ultra
+                                        </div>
+                                        <div className='nav-prod-desc'>
+                                            It's all about U
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='nav-phone-box'>
+                                    <div className='nav-phone-img'>
+                                        <img src="../../../assets/images/nav-phones/htc-10-global-carbon-gray-2v-listing.png" width='177px' height='170px' alt=""/>
+                                    </div>
+                                        <div className='nav-prod-name'>
+                                            HTC 10
+                                        </div>
+                                        <div className='nav-prod-desc'>
+                                            the power of 10
+                                        </div>                                    
+                                </div>
+                                <div className='nav-phone-box'>
+                                    <div className='nav-phone-img'>
+                                        <img src="../../../assets/images/nav-phones/htc-aero-global-opal-silver-2v-listing.png" width='177px' height='170px' alt=""/>
+                                    </div>
+                                        <div className='nav-prod-name'>
+                                            HTC One A9
+                                        </div>
+                                        <div className='nav-prod-desc'>
+                                            be brilliant
+                                        </div>                                    
+                                </div>
+                                <div className='nav-phone-box'>
+                                    <div className='nav-phone-img'>
+                                        <img src="../../../assets/images/nav-phones/htc-bolt-grey-us-2v-listing.png" width='177px' height='170px' alt=""/>
+                                    </div>
+                                        <div className='nav-prod-name'>
+                                            HTC One A9
+                                        </div>
+                                        <div className='nav-prod-desc'>
+                                            sculpted by light. illuminated by sound
+                                        </div>                                    
+                                </div>
                         </div>
                     </div>
                     

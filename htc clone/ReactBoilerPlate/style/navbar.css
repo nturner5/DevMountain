@@ -162,15 +162,15 @@ header {
 }
 
 .dropdown-p:hover {
-    background-color: #F6F6F6;
+    background-color: #FCFCFC;
 }
 
 .dropdown-s:hover {
-    background-color: #F6F6F6;
+    background-color: #FCFCFC;
 }
 
 .dropdown-sup:hover {
-    background-color: #F6F6F6;
+    background-color: #FCFCFC;
 }
 
 .navbar-list ul li.dropdown {
@@ -179,7 +179,7 @@ header {
 
 .dropdown-product {
     position: fixed;
-    background-color: #F6F6F6;
+    background-color: #FCFCFC;
     width: 100%;
     z-index: 1;
 }
@@ -208,7 +208,7 @@ header {
 }
 
 .product-phone-link {
-    width: 28%;
+    width: 33%;
     height: 290px;
     display: flex;
     flex-direction: column;
@@ -228,7 +228,40 @@ header {
 }
 
 .product-img-name {
+    display: flex;
     width: 72%;
     height: 290px;
-    background-color: gray;
+    background-color: #F6F6F6;
+}
+
+.nav-phone-box {
+    width: 197px;
+    height: 308px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px 5px;
+
+}
+
+.nav-prod-name {
+    display: block;
+    width: 80%;
+    margin: 12px auto 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+    color: dimgray;
+}
+
+.nav-prod-desc {
+    display: block;
+    width: 80%;
+    margin: 12px auto 0;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 15px;
+    text-align: center;
+    color: gray;
 }
