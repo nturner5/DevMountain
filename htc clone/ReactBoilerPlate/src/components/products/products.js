@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
+import ProductNav from './products_nav'
 
-const Products = () => {
-
+class Products extends Component {
+    render() {
         return (
-            <div>
-                <h1>Products</h1>
+            <div className='products-shop-container'>
+                <ProductNav />
             </div>
         )
+    }
 }
 
 export default Products

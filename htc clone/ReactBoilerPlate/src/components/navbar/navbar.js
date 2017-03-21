@@ -16,14 +16,14 @@ export default class Navbar extends Component {
             c: { display: 'none' }
         }
     }
-    onHoverA () {
+    onHoverA (target) {
         this.setState({
-            a: { display: 'block'}
+            [target]: { display: 'block'}
         })
     }
-    onExitA () {
+    onExitA (target) {
         this.setState({
-            a: { display: 'none' }
+            [target]: { display: 'none' }
         })
     }
     onHoverB () {
@@ -56,7 +56,7 @@ export default class Navbar extends Component {
                                 <img src="../../../assets/images/logos/htc-logo.png" alt=""/>
                             </Link>
                         </div>
-                        <li className="dropdown-p" onMouseOver={this.onHoverA} onMouseOut={this.onExitA}>
+                        <li className="dropdown-p" onMouseOver={this.onHoverA.bind(this, 'a')} onMouseOut={this.onExitA.bind(this, 'a')}>
                             <Link to='products' className="dropbtn">Products<i className="fa fa-caret-down fa-fw" aria-hidden="true"></i></Link>
 
                         </li>
