@@ -309,6 +309,7 @@ header {
     color: dimgray;
 }
 
+
 .nav-shop-desc {
     display: block;
     width: 80%;
@@ -341,9 +342,16 @@ header {
     font-weight: bold;
 }
 
+.support-img-name {
+    display: flex;
+    width: 72%;
+    height: 340px;
+    background-color: #F6F6F6;
+}
+
 .nav-supp-box {
     width: 394px;
-    height: 308px;
+    height: 290px;
     display: inline-block;
     vertical-align: top;
     padding: 30px 5px;

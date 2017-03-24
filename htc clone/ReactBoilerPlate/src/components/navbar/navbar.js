@@ -73,7 +73,7 @@ export default class Navbar extends Component {
                     <div className='join-search'>
                         <div className='boxes'>
                             <div className='join'>
-                                <a href='#'>Join Team HTC and Get Perks! ></a>
+                                <Link to='register'>Join Team HTC and Get Perks! ></Link>
                             </div>
                             <div className='cart'>
                                 <a href='#'>CART (0)</a>
@@ -177,15 +177,15 @@ export default class Navbar extends Component {
                             <a href="#">_Video Tutorials</a>
                             <a href="#">_Software+Apps</a>
                         </div>
-                        <div className='product-img-name'>
+                        <div className='support-img-name'>
                                 <div className='nav-supp-box'>
                                     <div className='nav-shop-img'>
                                         <img src="../../../assets/images/HTC-U-Ultra-unlocked-nav.png" width='394px' height='222px' alt=""/>
                                         <div className='nav-prod-name'>
-                                            HTC U Ultra
+                                            Tips & Tricks
                                         </div>
                                         <div className='nav-prod-desc'>
-                                            It's all about U
+                                            Get the Most from your HTC phone.
                                         </div>
                                     </div>
                                 </div>

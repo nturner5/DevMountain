@@ -1,0 +1,12 @@
+.register-container {
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.register-panel {
+    width: 98%;
+    height: 400px;
+    background-color: lightgray;
+}

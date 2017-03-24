@@ -8,8 +8,10 @@
 
 /*PRODUCTS NAVIGATION*/
 
+
 .product-leftnav-container {
     width: 188px;
+    min-width: 188px;
     border-style: solid;
     border-color: #F6F6F6;
     border-right-width: 2px;
@@ -63,8 +65,25 @@
     color: #78AC25;
 }
 
-.item-nav-phone:selection .icon-and-text #phone {
+
+.is-active .icon-and-text #phone {
     background-position: center -120px;
+}
+.is-active .icon-and-text h1 {
+    color: #666666;
+}
+.is-active {
+    background-color: #F6F6F6;
+    display: block;
+    position: relative;
+    clear: both;
+    height: 150px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    transition: 0.2s;
+
+
 }
 
 #accessory {
@@ -77,3 +96,38 @@
 
 }
 
+.item-nav-phone:hover .icon-and-text #accessory {
+    background-position: center -60px;
+}
+
+.is-active .icon-and-text #accessory {
+    background-position: center -120px;
+}
+
+#virtual {
+    width: 91px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../../../assets/images/icons/nav-virtual.png) 0 0;
+}
+
+
+
+.item-nav-phone:hover .icon-and-text #virtual {
+    background-position: center -60px;
+}
+
+#fitness {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../../../assets/images/icons/nav-wearables.png) 0 0;
+}
+
+.item-nav-phone:hover .icon-and-text #fitness {
+    background-position: center -64px;
+}

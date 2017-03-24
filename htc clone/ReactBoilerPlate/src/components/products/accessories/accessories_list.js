@@ -1,26 +1,26 @@
 import React , { Component } from 'react';
 import { connect } from 'react-redux';
-import { getAllSmartphones } from '../../../actions/index';
+import { getAllAccessories } from '../../../actions/index';
 
-class PhoneList extends Component {
+class AccessoriesList extends Component {
     componentWillMount() {
-        this.props.getAllSmartphones();
+        this.props.getAllAccessories();
         
     }
     renderList() {
-         return this.props.smartphone.map((smartphone) => {
+         return this.props.accessory.map((accessory) => {
             return (
                              
-                <div className='item-content-box' key={smartphone.id}>
+                <div className='item-content-box' key={accessory.id}>
                     <a className='item-image' href='#'>
-                        <img src={smartphone.image} alt=""/>
+                        <img src={accessory.image} alt=""/>
                     </a>
                     <div className='item-text'>
                         <div className='item-name'>
-                            {smartphone.name}
+                            {accessory.name}
                         </div>
                         <div className='item-desc'>
-                            {smartphone.description}
+                            {accessory.description}
                         </div>
                     </div>
                     <div className='learn-more-item' >
@@ -34,7 +34,7 @@ class PhoneList extends Component {
         })
     }
     render() {
-        console.log(this.props.smartphones)
+        console.log(this.props)
         return (
             <div className='list-products-buy'>
                 <div className='list-products-box'>
@@ -52,7 +52,7 @@ class PhoneList extends Component {
 function mapStateToProps(state) {
     return {
 
-      smartphone: state.smartphones.all
+      accessory: state.accessories.all
     }
 }
-export default connect(mapStateToProps, {getAllSmartphones})(PhoneList);
+export default connect(mapStateToProps, {getAllAccessories})(AccessoriesList);
