@@ -1,8 +1,9 @@
-import { REGISTER } from '../actions/index'
+import { LOGIN } from '../actions/index'
 const INITIAL_STATE = {all: [], post: null };
 export default function(state = INITIAL_STATE, action) {
     switch(action.type) {
-        case REGISTER:
+        case LOGIN:
+        console.log(action.payload);
             return {...state, all: action.payload.data}
         default:
             return state;

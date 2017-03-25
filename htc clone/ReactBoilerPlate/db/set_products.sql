@@ -65,10 +65,13 @@ INSERT INTO accessories (name, image, price, description, smartphonesid) VALUES
 ('HTC Active Earphones', '../../../assets/images/products/accessories/htc-rc-e250-headset-yellow-listing-240x240.png', 39.99, 'Introducing the world’s first USB-C* sport earphone with noise cancellation and adaptive noise control. JBL Reflect Aware C', 2);
 
 CREATE TABLE users (
-	user_id SERIAL PRIMARY KEY,
-    username TEXT,
+	id SERIAL PRIMARY KEY,
+    firstName TEXT,
+    lastName TEXT,
     email TEXT,
     password TEXT,
     registered timestamp without time zone
-)
+);
 
+INSERT INTO users (firstName, lastName, email, password) VALUES 
+('Sang', 'Ahn', 'sang@gmail.com', 'mynameissang');

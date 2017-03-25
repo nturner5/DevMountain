@@ -1,32 +1,17 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux';
-import { register } from '../../actions/index';
+import RegisterForm from './registerForm'
+import { register } from '../../actions/index'
 
 class Register extends Component {
-    componentWillMount() {
-        this.props.register();
+    submit = (values) => {
+        console.log(values);
+        register(values)
     }
-
     render() {
-        console.log(this.props)
         return (
-            <div className='register-container' >
-                <div className='register-panel'>
-                    <h1>Register</h1>
-                    
-                </div>
-
-            </div>
+            <RegisterForm onSubmit={this.submit}/>
         )
     }
 }
 
-function mapStateToProps(state) {
-    return {
-        signup: state.register.all
-    }
-}
-
-
-
-export default connect(mapStateToProps, {register})(Register)
+export default Register

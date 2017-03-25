@@ -52,15 +52,20 @@ export function deleteFromCart() {
         payload: request
     }
 }
-export function register() {
-    const request = axios.post(`${ROOT_URL}/api/register`)
+export function register(user) {
+    const request = axios.post(`${ROOT_URL}/api/register`, user)
     return {
         type: REGISTER,
         payload: request
     }
 }
-export function login() {
-    const request = axios.post(`${ROOT_URL}/api/login`)
+
+export function login(user) {
+    const request = axios.post(`${ROOT_URL}/api/login`, user).then(response => {
+        console.log(response.data)
+        return response.data
+    })
+    console.log(request);
     return {
         type: LOGIN,
         payload: request
