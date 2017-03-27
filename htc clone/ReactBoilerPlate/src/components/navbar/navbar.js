@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import MobileNav from './mobile_nav'
 import { Link } from 'react-router'
 
 export default class Navbar extends Component {
@@ -48,6 +49,8 @@ export default class Navbar extends Component {
     }
     render() {
         return (
+            <div>
+            <MobileNav/>
             <header>
                 <nav className='nav-bar'>
                     <ul className='navbar-list'>
@@ -193,6 +196,7 @@ export default class Navbar extends Component {
                     </div>
                 </div>
             </header>
+            </div>
         )
     }
 

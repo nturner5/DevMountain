@@ -17,6 +17,13 @@
     border-right-width: 2px;
 
 }
+
+@media (max-width: 720px) {
+    .product-leftnav-container {
+        display:none;
+    }
+} 
+
 .product-leftnav-container a {
     text-decoration: none;
 }

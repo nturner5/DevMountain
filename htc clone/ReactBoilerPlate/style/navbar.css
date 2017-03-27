@@ -380,3 +380,9 @@ header {
     text-align: center;
     color: gray;
 }
+
+@media (max-width:720px) {
+    header {
+        display: none;
+    }
+}

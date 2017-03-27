@@ -1,0 +1,121 @@
+@media (min-width: 721px) {
+    .mobile-nav-container {
+        display: none;
+    }
+}
+
+.mobile-navbar-box {
+    width: 100%;
+}
+
+.mobile-nav-container {
+    position: fixed;
+    width: 100%;
+    border-style: solid;
+    border-color: lightgray;
+    border-top-width: 1px;
+    min-width: 320px;
+    max-width: 720px;
+    height: 48px;
+    background-color: white;
+    z-index: 10;
+}
+
+
+.mobile-navbar {
+    width: 100%;
+    height: 48px;
+    display: flex;
+}
+
+.mobile-logo {
+    width: 64px;
+    height: 48px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.mobile-logo a img {
+    width: 45px;
+    height: 14px;
+ 
+}
+
+.mobile-products-drop {
+    width: 70%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+.mobile-products-drop:hover {
+    background-color: #F6F6F6;
+    color: #BCDB79;
+}
+
+.mobile-products-drop p {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+
+.mobile-icon-container {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+}
+.mobile-menu-drop {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+
+}
+
+.mobile-dropdown {
+    position: fixed;
+    width: 100%;
+    background-color: #F6F6F6;
+    z-index:10;
+    margin-top: 48px;
+}
+
+.mobile-dropdown-content {
+    width: 100%;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+.mobile-dropdown-content a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 3%;
+}

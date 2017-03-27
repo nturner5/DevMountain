@@ -17,6 +17,29 @@ section {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 720px) {
+    .main-img-container {
+        display: none;
+    }
+}
+
+.mobile-main-container {
+    width: 100%;
+}
+.mobile-main-container img{
+    width: 98.2%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 721px) {
+    .mobile-main-container {
+        display: none;
+    }
+}
+
+
 .u-container {
     width: 100%;
     min-width: 988px;
@@ -32,6 +55,29 @@ section {
     margin: 4px 1px;
     padding: 5px;
     overflow: hidden;
+}
+
+@media (max-width: 720px) {
+    .u-container {
+        display: none;
+    }
+}
+
+.u-mobile-container {
+    width: 100%;
+}
+.u-mobile-container img {
+    width: 98.2%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    margin-top: 4px;
+}
+
+@media (min-width: 721px) {
+    .u-mobile-container {
+        display: none;
+    }
 }
 
 .u-container img:hover {
@@ -55,9 +101,32 @@ section {
     cursor: pointer;
 }
 
+@media (max-width: 720px) {
+    .onlyhtc-img-container {
+        display: none;
+    }
+}
+
+.onlyhtc-mobile-container {
+    width: 100%;
+}
+
+.onlyhtc-mobile {
+    width: 98.2%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media (min-width: 721px) {
+    .onlyhtc-mobile-container {
+        display: none;
+    }
+}
+
 .carousel-home {
     width: 98.2%;
-    min-width: 904px;
     height: 190px;
     margin: 0 auto;
     padding: 60px 30px;
@@ -68,16 +137,30 @@ section {
 }
 
 .quotes {
-    font-size: 27px;
+    font-size: 16px;
     color: dimgray;
-    line-height: 1.2em;
+    line-height: 1em;
 }
 
 .author {
     font-style: italic;
-    font-size: 20px;
+    font-size: 13px;
     color: gray;
 }
+
+@media (min-width: 720px) {
+    .carousel-home {
+        min-width: 904px;
+    }
+    .quotes {
+        font-size: 27px;    
+        line-height: 1.2em;
+    }
+    .author {
+        font-size: 20px;
+    }
+}
+
 
 .buy-today-container {
     width: 98.2%;
@@ -86,6 +169,12 @@ section {
     display: block;
     margin: auto;
     padding: 40px 30px 95px;
+}
+
+@media (max-width: 720px) {
+    .buy-today-container {
+        display: none;
+    }
 }
 
 .buy-today-container h2 {
