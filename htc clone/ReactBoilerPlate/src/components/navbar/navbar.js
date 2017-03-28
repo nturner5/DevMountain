@@ -89,7 +89,7 @@ export default class Navbar extends Component {
                     </div>
                 </nav>
                 
-                <div className="dropdown-product" onMouseOver={this.onHoverA} onMouseOut={this.onExitA} style={this.state.a}>
+                <div className="dropdown-product" onMouseOver={this.onHoverA.bind(this, 'a')} onMouseOut={this.onExitA.bind(this, 'a')} style={this.state.a}>
                     <div className='drop-menu-container'>
                         <div className='product-phone-link'>
                             <a href="#">_HTC U Ultra</a>

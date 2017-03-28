@@ -10,7 +10,7 @@ const Home = () => {
                     <img style={{ marginTop:'80px'}} src='/../../../assets/images/20170309-hp-htc-u-ultra.jpg' className='main-img' width='1180px' height='472px' />
                 </div>
                 <div className='mobile-main-container'>
-                    <img style={{ marginTop:'40px'}} src='/../../../assets/images/mobile/htc-u-ultra-mobile.jpg' width='695px'  />
+                    <img style={{ marginTop:'30px'}} src='/../../../assets/images/mobile/htc-u-ultra-mobile.jpg' width='695px'  />
                 </div>
 
                 <div className='u-container'>

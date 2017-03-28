@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 export default class MobileNav extends Component {
+        componentDidMount() {
+
+    }
+
     constructor(props) {
     super(props);
         this.onHoverA = this.onHoverA.bind(this)
@@ -39,7 +44,7 @@ export default class MobileNav extends Component {
                 <div className='mobile-nav-container'>
                     <nav className='mobile-navbar'>
                         <div className='mobile-logo'>
-                        <a href='#'><img src='../../assets/images/logos/htc-logo.png' alt=""/></a>
+                        <Link to='/'><img src='../../assets/images/logos/htc-logo.png' alt=""/></Link>
                         </div>
                         <div className='mobile-products-drop'onMouseOver={this.onHoverA.bind(this, 'a')} onMouseOut={this.onExitA.bind(this, 'a')}>
                             <p>Products</p> <i className="fa fa-caret-down fa-fw" aria-hidden="true"></i>
@@ -55,7 +60,7 @@ export default class MobileNav extends Component {
                         </div>
                     </nav>
                 </div>
-                <div className='mobile-dropdown' onMouseOver={this.onHoverA} onMouseOut={this.onExitA} style={this.state.a}>
+                <div className='mobile-dropdown' onMouseOver={this.onHoverA.bind(this, 'a')} onMouseOut={this.onExitA.bind(this, 'a')} style={this.state.a}>
                     <div className='mobile-dropdown-content'>
                             <a href="#">HTC U Ultra</a>
                     
