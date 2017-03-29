@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { getProducts } from './services/products'
+import { getProducts } from './services/products';
+import { Link } from 'react-router';
 
 class Store extends Component {
     constructor(props) {
@@ -36,8 +37,8 @@ class Store extends Component {
 
     render() {
         console.log('RENDERING COMPONENT')
-        const products = this.state.products.map((products, i ) => {
-            return <div key={i}>{products.title}</div>
+        const products = this.state.products.map((product, i ) => {
+            return <div key={i}><Link to={'/product/' + product.id}>{product.title}</Link></div>
         });
         return (
             <div>

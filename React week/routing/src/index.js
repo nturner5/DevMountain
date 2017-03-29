@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About'
 import NavBar from './NavBar'
 import Store from './Store'
+import ProductDetail from './ProductDetail'
 import './index.css';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Route path='/' component={Home} />
       <Route path='/about' component={About}/>
       <Route path='/store' component={Store}/>
+      <Route path='/product/:id' component={ProductDetail}/>
     </Route>
   </Router>,
   document.getElementById('root')
