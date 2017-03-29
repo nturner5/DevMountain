@@ -1,1 +1,0 @@
-# Building HTC skill clone

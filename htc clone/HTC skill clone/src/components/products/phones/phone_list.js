@@ -2,6 +2,7 @@ import React , { Component } from 'react';
 import { connect } from 'react-redux';
 import { getAllSmartphones } from '../../../actions/index';
 
+
 class PhoneList extends Component {
     componentWillMount() {
         this.props.getAllSmartphones();
